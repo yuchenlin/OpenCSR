@@ -18,19 +18,19 @@ Current commonsense reasoning research focuses on developing models that use com
 
 ### Please check the [***documentation***](https://open-csr.github.io/) for running the code.**
 
-- *drfact_data/*
-    - *datasets/* **_(download from [here](https://open-csr.github.io/data#the-opencsr-datasets))_**
-    - *knowledge_corpus/* **_(download from [here](https://open-csr.github.io/data#the-commonsense-knowledge-corpus))_**
-- *baseline_methods/*
-    - *BM25/*
-    - *DPR/*
-    - *MCQA/*     **_(i.e., Concept Re-ranker)_**
-- *language-master/language/labs/*  
-    - *drkit/*    **_(common modules for DrKIT and DrFact)_**
-    - *drfact/*   **_(for running DrFact)_**
-- *scripts/*
-    - *run_drkit.sh*
-    - *run_drfact.sh*
+- *[drfact_data/](drfact_data)*
+    - *[datasets/](drfact_data/datasets)* **_(download from [here](https://open-csr.github.io/data#the-opencsr-datasets))_**
+    - *[knowledge_corpus/](drfact_data/knowledge_corpus/)* **_(download from [here](https://open-csr.github.io/data#the-commonsense-knowledge-corpus))_**
+- *[baseline_methods/]*
+    - *[BM25/](baseline_methods/BM25)*
+    - *[DPR/](baseline_methods/DPR)*
+    - *[MCQA/](baseline_methods/MCQA)*     **_(i.e., Concept Re-ranker)_**
+- *[language-master/language/labs/](language-master/language/labs/)*  
+    - *[drkit/](language-master/language/labs/drkit)*    **_(common modules for DrKIT and DrFact)_**
+    - *[drfact/](language-master/language/labs/drfact)*   **_(for running DrFact)_**
+- *[scripts/](scripts/)*
+    - *[run_drkit.sh](scripts/run_drkit.sh)*
+    - *[run_drfact.sh](scripts/run_drfact.sh)*
 
 
 
