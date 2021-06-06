@@ -29,7 +29,7 @@ flags.DEFINE_string("output_prefix", "DPR",
 
 
 def evaluate_DPR_hits(DPR_results, corpus_dict):
-  """Evaluates the retrieved results."""
+  """Formats the retrieved results."""
   with open(FLAGS.linked_qa_file) as f:
     instances = [json.loads(line) for line in f.read().split("\n") if line]
   assert len(DPR_results) == len(instances)
@@ -53,35 +53,9 @@ def evaluate_DPR_hits(DPR_results, corpus_dict):
   for question_id, ins in tqdm(
           enumerate(instances[:]),
           total=num_questions, desc=FLAGS.linked_qa_file):
-    q = ins["question"]
-    a = ins["answer"]
-    answer_concepts = set([a["name"] for a in ins["answer_concepts"]])
     ret_fids, ret_scores = get_results(question_id)
     all_ret_facts = [(fid, s) for fid, s in zip(ret_fids, ret_scores)]
-    # supporting_ret_facts = []
-    covered_concepts = set()
-    first_answer_conept_position = -1
-    last_answer_concept_position = -1
-    # found_wrong_top_choice = False
-    for ind, fid in enumerate(ret_fids):
-      fact = corpus_dict[fid]
-      for m in fact["mentions"]:
-        c = m["kb_id"]
-        if c in answer_concepts:
-          # Found an answer concept.
-          # supporting_ret_facts.append(
-          #     {"fact_id": fact["url"],
-          #      "covered_answer_concept": c, "hit_position": ind})
-          if len(covered_concepts) == 0:
-            first_answer_conept_position = ind
-          if c not in covered_concepts:
-            covered_concepts.add(c)
-          if covered_concepts == answer_concepts and last_answer_concept_position < 0:
-            last_answer_concept_position = ind
-            break
     DPR_res = {}
-    DPR_res["covered_concepts"] = list(covered_concepts)
-    # DPR_res["supporting_ret_facts"] = supporting_ret_facts 
     DPR_res["all_ret_facts"] = all_ret_facts
     ins["results"] = DPR_res
 
@@ -92,7 +66,7 @@ def evaluate_DPR_hits(DPR_results, corpus_dict):
 
 
 def main(_):
-  """Run the evaluation and draw the curve."""
+  """Run the results formatting."""
 
   if "_with_ans" in FLAGS.linked_qa_file:
     FLAGS.linked_qa_file = FLAGS.linked_qa_file.replace("_with_ans", "")
