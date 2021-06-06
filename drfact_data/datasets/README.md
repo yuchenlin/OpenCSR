@@ -1,4 +1,4 @@
-Check [https://open-csr.github.io/data] (https://open-csr.github.io/data) for downloading the datasets and put them here.
+Check [https://open-csr.github.io/data](https://open-csr.github.io/data) for downloading the datasets and put them here.
 
 Please cite the following papers:
 
