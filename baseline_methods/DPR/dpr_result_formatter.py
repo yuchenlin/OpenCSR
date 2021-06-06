@@ -61,7 +61,7 @@ def evaluate_DPR_hits(DPR_results, corpus_dict):
 
     result_data.append(ins) 
     
-  with open(FLAGS.linked_qa_file+"."+FLAGS.output_prefix+".jsonl", "w") as f:
+  with open(FLAGS.linked_qa_file.replace(".jsonl", "")+"."+FLAGS.output_prefix+".jsonl", "w") as f:
     f.write("\n".join([json.dumps(r) for r in result_data])) 
 
 
