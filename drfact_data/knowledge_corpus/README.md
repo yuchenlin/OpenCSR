@@ -1,6 +1,6 @@
 ## The Commonsense Knowledge Corpus
 
-[Download the Preprocessed Corpus](https://mega.nz/folder/9ToQWLQJ#PxGYM-wymiOI4YRCNyyafA)
+[Download the Preprocessed Corpus](https://mega.nz/folder/9ToQWLQJ#PxGYM-wymiOI4YRCNyyafA); Or you can unzip the `gkb_best.drfact_format.jsonl.zip` here.
 
 We use the [GenericsKB](https://allenai.org/data/genericskb) as our knowledge corpus. We preprocess the corpus, extract the frequent concepts, and finally link the facts to their mentioned concepts. The link contains two files:
 
