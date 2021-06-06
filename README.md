@@ -58,3 +58,6 @@ We show the instructions for running four retrieval approaches to the OpenCSR ta
 }
 ```
 
+## Contact
+
+Please email ***yuchen.lin@usc.edu*** if you have any questions.
