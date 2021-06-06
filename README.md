@@ -16,21 +16,29 @@ Current commonsense reasoning research focuses on developing models that use com
 
 ## Content 
 
-### Please check the [***documentation***](https://open-csr.github.io/) for running the code.**
+### Please check the [***documentation***](https://open-csr.github.io/methods/) for running the code.**
+
+We show the instructions for running four retrieval approaches to the OpenCSR task — BM25 (off-the-shelf), DPR (EMNLP2020), DrKIT (ICLR 2020) and DrFact (ours, NAACL 2021), as well as a Concept Re-ranker to boost the performance by learning with cross-attention. Note that there is a relative dependency of these four methods:
+
+- training the DPR model needs the results from BM25 (to create training data);
+- DrFact needs to reuse DPR’s fact index and single-hop results (for creating distant supervision);
+- DrFact and DrKIT share many utility functions (sparse matrix operation and indexing scripts). We detailed the detailed instructions in individual pages.
+
+### Outline
 
 - *[drfact_data/](drfact_data)*
     - *[datasets/](drfact_data/datasets)* **_(download from [here](https://open-csr.github.io/data#the-opencsr-datasets))_**
     - *[knowledge_corpus/](drfact_data/knowledge_corpus/)* **_(download from [here](https://open-csr.github.io/data#the-commonsense-knowledge-corpus))_**
-- *[baseline_methods/]*
-    - *[BM25/](baseline_methods/BM25)*
-    - *[DPR/](baseline_methods/DPR)*
-    - *[MCQA/](baseline_methods/MCQA)*     **_(i.e., Concept Re-ranker)_**
+- *[baseline_methods/](baseline_methods/)*
+    - *[BM25/](baseline_methods/BM25)*   --> **https://open-csr.github.io/methods/bm25**
+    - *[DPR/](baseline_methods/DPR)*    --> **https://open-csr.github.io/methods/dpr**
+    - *[MCQA/](baseline_methods/MCQA)*     **_(i.e., Concept Re-ranker)_**  --> **https://open-csr.github.io/methods/reranker**
 - *[language-master/language/labs/](language-master/language/labs/)*  
     - *[drkit/](language-master/language/labs/drkit)*    **_(common modules for DrKIT and DrFact)_**
-    - *[drfact/](language-master/language/labs/drfact)*   **_(for running DrFact)_**
+    - *[drfact/](language-master/language/labs/drfact)*   **_(for running DrFact)_**    
 - *[scripts/](scripts/)*
-    - *[run_drkit.sh](scripts/run_drkit.sh)*
-    - *[run_drfact.sh](scripts/run_drfact.sh)*
+    - *[run_drkit.sh](scripts/run_drkit.sh)*    --> **https://open-csr.github.io/methods/drkit**
+    - *[run_drfact.sh](scripts/run_drfact.sh)*  --> **https://open-csr.github.io/methods/drfact**
 
 
 
