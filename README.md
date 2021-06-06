@@ -1,6 +1,6 @@
 # Open-Ended Commonsense Reasoning
 
-### **_Quick links:_**  [**[Paper]**](https://www.aclweb.org/anthology/2021.naacl-main.366/)  |  [**[Video]**](https://mega.nz/file/5SpQjJKS#J82pfZVDzy3r4aWdNF4R6O8EP5gsepbY20vYihANfgE) | [**[Slides]**](/opencsr_naacl_slides.pptx) | [**[Documentation]**](https://open-csr.github.io/)
+### **_Quick links:_**  [**[Paper]**](https://www.aclweb.org/anthology/2021.naacl-main.366/)  |  [**[Video]**](https://mega.nz/file/5SpQjJKS#J82pfZVDzy3r4aWdNF4R6O8EP5gsepbY20vYihANfgE) | [**[Slides]**](https://open-csr.github.io/opencsr_naacl_slides.pptx) | [**[Documentation]**](https://open-csr.github.io/)
 
 ---
 
