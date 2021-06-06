@@ -1,6 +1,6 @@
 # Open-Ended Commonsense Reasoning
 
-## Check the documentation at [https://open-csr.github.io/](https://open-csr.github.io/).
+## **The documentation is at [https://open-csr.github.io/](https://open-csr.github.io/)**.
 
 ## Intro 
 This is the repository of the paper, [_Differentiable Open-Ended Commonsense Reasoning_](https://www.aclweb.org/anthology/2021.naacl-main.366/), by [_Bill Yuchen Lin_](https://yuchenlin.xyz/), [_Haitian Sun_](https://scholar.google.com/citations?user=opSHsTQAAAAJ&hl=en), [_Bhuwan Dhingra_](http://www.cs.cmu.edu/~bdhingra/), [_Manzil Zaheer_](https://scholar.google.com/citations?user=A33FhJMAAAAJ&hl=en), [_Xiang Ren_](http://ink-ron.usc.edu/xiangren/), and [_William W. Cohen_](https://wwcohen.github.io/), (to appear) in Proc. of [*NAACL 2021*](https://2021.naacl.org/). 
