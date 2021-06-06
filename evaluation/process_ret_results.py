@@ -13,8 +13,6 @@ flags.DEFINE_string("linked_qa_ret_file", "",
                     "The input path to the linked qa file's retrieved results.")
 flags.DEFINE_string("pred_result_file", "", # Only for BM25/DPR methods because they need concept aggregation for ranking concepts.
                     "The input/output path to the linked qa file's prediction results.") # output for BM25/DPR, and input for other methods.
-flags.DEFINE_string("eval_result_file", "",
-                    "The output path to save the evaluation results.")
 flags.DEFINE_string("ent_agg", "max", "max | mean | sum")
 flags.DEFINE_string("drfact_format_gkb_file", "drfact_data/knowledge_corpus/gkb_best.drfact_format.jsonl", "Path to gkb corpus.")
 # flags.DEFINE_boolean("need_process", False, "set --need_process for BM25 and DPR.")  # not set for DrFact/DrKIT and x+Reranker

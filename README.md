@@ -40,7 +40,7 @@ We show the instructions for running four retrieval approaches to the OpenCSR ta
 - *[scripts/](scripts/)*
     - *[run_drkit.sh](scripts/run_drkit.sh)*    --> **https://open-csr.github.io/methods/drkit**
     - *[run_drfact.sh](scripts/run_drfact.sh)*  --> **https://open-csr.github.io/methods/drfact**
-
+- *[evaluation/](evaluation/)*  --> **https://open-csr.github.io/methods/evaluation**
 
 
 ## Citation
