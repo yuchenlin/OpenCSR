@@ -34,7 +34,7 @@ fi
 touch ${LOG_FILE}
 
 
-CUDA_VISIBLE_DEVICES=${GPUS} python -m drfact.run_drfact \
+CUDA_VISIBLE_DEVICES=${GPUS} python -m language.labs.drfact.run_drfact \
 --vocab_file ${BERT_PATH}/vocab.txt \
 --tokenizer_model_file None \
 --bert_config_file ${BERT_PATH}/bert_config.json \
