@@ -59,5 +59,5 @@ We show the instructions for running four retrieval approaches to the OpenCSR ta
 ```
 
 ## Contact
-
+This repo is now under active development for addressing code refactoring and refining documentation.
 Please email ***yuchen.lin@usc.edu*** if you have any questions.
