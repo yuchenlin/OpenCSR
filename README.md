@@ -17,7 +17,7 @@ Current commonsense reasoning research focuses on developing models that use com
 
 ## Content 
 
-### Please check the [***documentation***](https://open-csr.github.io/methods/) for running the code.**
+### Please check the [***documentation***](https://open-csr.github.io/methods/) for running the code.
 
 We show the instructions for running four retrieval approaches to the OpenCSR task — BM25 (off-the-shelf), DPR (EMNLP2020), DrKIT (ICLR 2020) and DrFact (ours, NAACL 2021), as well as a concept re-ranker to boost the performance by learning with cross-attention. Note that there is a relative dependency of these four methods:
 
