@@ -44,7 +44,7 @@ def main(_):
     ranked_list = [(c["text"], float(p)) for c, p in zip(choices, pred)]
     ranked_list.sort(key=lambda x: x[1], reverse=True)
     for key in original_result[ind]["predictions_K"].keys():
-      original_result[ind]["predictions_K"][key] = ranked_list[:int(key)+50]
+      original_result[ind]["predictions_K"][key] = ranked_list[:int(key)]
   with open(FLAGS.converted_result_file, "w") as f:
     for inst in original_result:
       f.write(json.dumps(inst) + "\n")

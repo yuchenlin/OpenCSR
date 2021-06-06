@@ -15,8 +15,6 @@ drfact_data/datasets/*/linked_train.*.jsonl
 drfact_data/datasets/*/linked_dev.*.jsonl
 drfact_data/datasets/*/linked_train.jsonl.*.jsonl
 drfact_data/datasets/*/linked_dev.jsonl.*.jsonl
-!drfact_data/datasets/*/linked_dev.meta_data.jsonl
-!drfact_data/datasets/*/linked_dev.meta_data_amt.jsonl
 *1hop*
 *2hop* 
 baseline_methods/Reader/squad_data
